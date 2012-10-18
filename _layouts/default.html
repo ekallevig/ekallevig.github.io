@@ -2,12 +2,22 @@
 <html>
 
 <head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel
 </head>
 
 <body>
-<h1>Test page.</h1>
 
-{{ content }}
+    <nav>
+        {% if page.type == 'home' %}
+            <h1><a href="/">Erik Kallevig</a></h1>
+        {% else %}
+            <a href="/">Erik Kallevig</a>
+        {% endif %}
+    </nav>
+    {{ content }}
 
 </body>
 </html>
