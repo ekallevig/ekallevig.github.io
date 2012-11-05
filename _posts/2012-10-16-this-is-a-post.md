@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to set up a static blog on Github using Jekyll.
+title: Cest usus legentis in iis qui facit eorum claritatem.
 ---
 
-This is a post. It's been a long time since I've written a blog.  That's not the reason I'm starting this again. The reason, is that I wanted to share my thoughts. I wanted to start sharing some of the things that I discover about web development on a daily basis of us to help the community at large and to help me remember two things I want to come back.
+Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius.
