@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="http://use.edgefonts.net/marvel.js"></script>
     <script src="http://use.edgefonts.net/maven-pro.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
     <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="/css/main.css">
 </head>
@@ -25,6 +26,20 @@
     <div class="content-wrap">
         {{ content }}
     </div>
+
+<script>
+    var height = $(document).height();
+
+    $(window).on("message", function(e) {
+        var data = e.originalEvent.data;  // Should work.
+        console.log(e.originalEvent.origin)
+        // if (data.origin === '//gift-guide/') {
+            console.log(data);
+            // $('#gg-iframe').css('height', data);
+        // }
+        parent.postMessage(height ,'*');
+    });
+</script>
 
 </body>
 </html>
