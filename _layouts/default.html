@@ -28,13 +28,13 @@
     </div>
 
 <script>
-    var height = $(document).height();
+    var height = $('body').height();
 
     $(window).on('message', function(e) {
         var data = e.originalEvent.data;
-        console.log(e.originalEvent.origin);
+        // console.log(e.originalEvent.origin);
         // if (data.origin === '//gift-guide/') {
-            console.log(data);
+            // console.log(data);
             // $('#gg-iframe').css('height', data);
         // }
         parent.postMessage(height ,'*');
