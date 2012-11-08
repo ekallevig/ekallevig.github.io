@@ -29,18 +29,9 @@
 
 <script>
     var height = $('html').height();
-
-    $(window).on('message', function(e) {
-        var data = e.originalEvent.data;
-        // console.log(e.originalEvent.origin);
-        // if (data.origin === '//gift-guide/') {
-            // console.log(data);
-            // $('#gg-iframe').css('height', data);
-        // }
-        var heightUpdateInterval = setInterval(function() {
-            parent.postMessage(height ,'*');
-        });
-    });
+    var heightUpdateInterval = setInterval(function() {
+        parent.postMessage(height ,'*');
+    }, 500);
 </script>
 
 </body>
