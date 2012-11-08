@@ -37,7 +37,9 @@
             // console.log(data);
             // $('#gg-iframe').css('height', data);
         // }
-        parent.postMessage(height ,'*');
+        var heightUpdateInterval = setInterval(function() {
+            parent.postMessage(height ,'*');
+        });
     });
 </script>
 
