@@ -1,5 +1,5 @@
 /**
- * Ekallevig.com Global Stylesheet
+ * www.ekallevig.com stylesheet
  * @author Erik Kallevig
  */
 
@@ -154,9 +154,9 @@ html {
 }
 
 body {
-  background: #333;
-  color: #848484;
-  font-family: 'Shadows Into Light', Georgia, 'Times New Roman', serif;
+  background: rgb(116, 182, 207);
+  color: rgb(255,255,255);
+  font-family: 'Source Sans Pro', Georgia, 'Times New Roman', serif;
   font-size: 18px;
   -webkit-font-smoothing: antialiased;
   height: 100%;
@@ -184,32 +184,9 @@ li {
   margin: 25px 0 15px;
 }
 
-h1 {
-  font-size: 38px;
-  margin: 0 20px;
-  text-shadow: -1px -1px 0px rgba(0, 0, 0, .7);
-}
-
-h2 {
-  color: #535353;
-  font-size: 28px;
-  text-shadow: -1px -1px 0px rgba(0, 0, 0, .4);
-}
-
 a {
   color: #15c;
   text-decoration: none;
-}
-
-#wrap {
-  display: table;
-  height: 100%;
-  width: 100%;
-}
-
-header {
-  display: table-cell;
-  vertical-align: middle;
 }
 
 
@@ -218,11 +195,8 @@ header {
  * Home page
  */
 
-.home {
-  text-align: center;
-}
 
-@-webkit-keyframes smiley {
+/*@-webkit-keyframes smiley {
   from {
     -webkit-transform: rotate(0deg);
   }
@@ -239,6 +213,38 @@ header {
   margin-left: 5px;
   -moz-transform: rotate(90deg);
   -webkit-transform: rotate(90deg);
+}*/
+
+
+
+/**
+ * Large window
+ */
+
+@media all and (min-width: 501px) {
+
+  .page-wrap {
+    display: table;
+    height: 100%;
+    width: 100%;
+  }
+
+  .portrait-image {
+    background: url(/images/erik-portrait-vertical.jpg) no-repeat 30% 0 / cover;
+    display: table-cell;
+    width: 30%;
+  }
+
+  .page-header {
+    display: table-cell;
+    padding: 0 5%;
+    vertical-align: middle;
+  }
+
+  .page-title {
+    font-size: 70px;
+  }
+
 }
 
 
@@ -247,12 +253,23 @@ header {
  * Small window
  */
 
-@media all and (max-width: 600px) {
+@media all and (max-width: 500px) {
 
+  .portrait-image {
+    background: url(/images/erik-portrait-horizontal.jpg) no-repeat 0 30% / cover;
+    height: 300px;
+    width: 100%;
+  }
 
+  .page-header {
+    padding: 0 5%;
+  }
+
+  .page-title {
+    font-size: 40px;
+  }
 
 }
-
 
 
 
