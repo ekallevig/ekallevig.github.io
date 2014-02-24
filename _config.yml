@@ -1,4 +1,3 @@
 markdown: rdiscount
 pygments: true
-auto: true
-permalink: pretty
+permalink: /blog/:year/:month/:day/:title/

@@ -1,0 +1,267 @@
+/**
+ * Ekallevig.com Global Stylesheet
+ * @author Erik Kallevig
+ */
+
+
+/**
+ * Reset
+ */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+strong {
+  font-weight: bold;
+}
+
+
+
+/**
+ * Globals
+ */
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background: #333;
+  color: #848484;
+  font-family: 'Shadows Into Light', Georgia, 'Times New Roman', serif;
+  font-size: 18px;
+  -webkit-font-smoothing: antialiased;
+  height: 100%;
+  line-height: 1.2;
+  text-rendering: optimizelegibility;
+  width: 100%;
+}
+
+.show {
+  display: block !important;
+}
+
+.hide {
+  display: none !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li {
+  margin: 25px 0 15px;
+}
+
+h1 {
+  font-size: 38px;
+  margin: 0 20px;
+  text-shadow: -1px -1px 0px rgba(0, 0, 0, .7);
+}
+
+h2 {
+  color: #535353;
+  font-size: 28px;
+  text-shadow: -1px -1px 0px rgba(0, 0, 0, .4);
+}
+
+a {
+  color: #15c;
+  text-decoration: none;
+}
+
+#wrap {
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+
+header {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+
+
+/**
+ * Home page
+ */
+
+.home {
+  text-align: center;
+}
+
+@-webkit-keyframes smiley {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(90deg);
+  }
+}
+
+#smiley {
+  -webkit-animation-name: smiley;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-timing-function: ease-in-out;
+  display: inline-block;
+  margin-left: 5px;
+  -moz-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+}
+
+
+
+/**
+ * Small window
+ */
+
+@media all and (max-width: 600px) {
+
+
+
+}
+
+
+
+
+/**
+ * Print
+ */
+
+@media print {
+
+
+
+}
