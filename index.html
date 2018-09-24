@@ -1,28 +1,60 @@
 <!doctype html>
-<html lang="en">
+<meta charset="utf-8">
+<title>Erik Kallevig, Web Developer, Reston, VA</title>
+<meta name="description" content="Erik Kallevig is a web developer.">
+<meta name="keywords" content="Erik Kallevig, Erik, Kallevig, web, developer">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimal-ui">
+<meta name="google-site-verification" content="M09WRlmjqRJYRrjSWBAfdUAo0hvB69d37vkOKsUs0W4">
+<style>
+  body,html,ul,li {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+  }
+  body {
+    font-family: "SF Mono", "Monaco", "Inconsolata", "Fira Mono", "Droid Sans Mono", "Source Code Pro", monospace, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  }
+  h1 {
+    font-size: 2vmax;
+    font-weight: normal;
+    margin: 0;
+  }
+  ul {
+    margin: 10px 0 20px;
+  }
+  li {
+    list-style: none;
+  }
+  .ek-container {
+    display: grid;
+    grid-template-columns: 10% 40% 40% 10%;
+    grid-template-rows: 20% 60% 20%;
+    height: 100%;
+    width: 100%;
+  }
+  .ek-heading {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    align-self: center;
+    padding: 0 20px 0 0;
+  }
+  .ek-profile-photo {
+    align-self: center;
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    justify-self: center;
+    width: auto;
+    height: auto;
+    max-height: 100%;
+    max-width: 100%;
+  }
+</style>
 
-<head>
-    <meta property="fb:admins" content="ekallevig"/>
-    <meta charset="utf-8">
-    <title>Erik Kallevig, Web Developer</title>
-    <meta name="description" content="Erik Kallevig is a front-end web developer.">
-    <meta name="keywords" content="Erik Kallevig, Erik, Kallevig, web, developer, designer, HTML5, CSS3, JavaScript">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimal-ui">
-    <meta name="google-site-verification" content="M09WRlmjqRJYRrjSWBAfdUAo0hvB69d37vkOKsUs0W4">
-    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200" rel="stylesheet">
-    <link rel="stylesheet" href="/css/default.css" />
-    <link href="/images/favicon-32x32.png" rel="shortcut icon">
-    <!--[if lt IE 9]>
-    <script src="/js/respond.min.js"></script>
-    <![endif]-->
-</head>
-
-<body>
-    <div class="page-wrap">
-        <div class="portrait-image test"></div>
-        <div class="page-header">
-            <h1 class="page-title">Erik Kallevig<br>Web Developer</h1>
-        </div>
-    </div>
-</body>
-</html>
+<div class="ek-container">
+  <h1 class="ek-heading"><b>Erik Kallevig</b> is a web developer from Minnetonka, MN. He lives in Reston, VA and works at Gannett.</h1>
+  <img src="/images/erik-kallevig-photo.jpg" class="ek-profile-photo">
+</div>

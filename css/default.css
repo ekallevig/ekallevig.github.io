@@ -154,7 +154,6 @@ html {
 }
 
 body {
-    background: rgb(116, 182, 207);
     color: rgb(255,255,255);
     font-family: 'Source Sans Pro', Georgia, 'Times New Roman', serif;
     font-size: 18px;
@@ -188,93 +187,3 @@ a {
  */
 
 
-/*@-webkit-keyframes smiley {
-  from {
-    -webkit-transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(90deg);
-  }
-}
-
-#smiley {
-  -webkit-animation-name: smiley;
-  -webkit-animation-duration: 1s;
-  -webkit-animation-timing-function: ease-in-out;
-  display: inline-block;
-  margin-left: 5px;
-  -moz-transform: rotate(90deg);
-  -webkit-transform: rotate(90deg);
-}*/
-
-
-
-/**
- * Large window
- */
-
-@media all and (min-width: 501px) {
-
-    .page-wrap {
-        display: table;
-        height: 100%;
-        width: 100%;
-    }
-
-    .portrait-image {
-        background: url(/images/erik-portrait-vertical.jpg) no-repeat 30% 0 / cover;
-        display: table-cell;
-        width: 50%;
-    }
-
-    .page-header {
-        display: table-cell;
-        padding: 0 5%;
-        vertical-align: middle;
-    }
-
-    .page-title {
-        font-size: 50px;
-    }
-
-}
-
-
-/**
- * Medium window
- */
-
-@media all and (min-width: 700px) {
-
-    .portrait-image {
-        width: 50%;
-    }
-
-    .page-title {
-        font-size: 70px;
-    }
-
-}
-
-
-/**
- * Small window
- */
-
-@media all and (max-width: 500px) {
-
-    .portrait-image {
-        background: url(/images/erik-portrait-horizontal.jpg) no-repeat 0 30% / cover;
-        height: 300px;
-        width: 100%;
-    }
-
-    .page-header {
-        padding: 0 5%;
-    }
-
-    .page-title {
-        font-size: 40px;
-    }
-
-}
