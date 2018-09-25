@@ -16,8 +16,7 @@
   }
   .ek-container {
     display: grid;
-    grid-template-columns: 10% 40% 40% 10%;
-    grid-template-rows: 20% 60% 20%;
+    grid-template: 20% 60% 20% / 10% 40% 40% 10%;
     height: 100%;
     width: 100%;
   }
@@ -32,34 +31,30 @@
   }
   .ek-profile-photo {
     align-self: center;
-    grid-column: 3 / 4;
-    grid-row: 2 / 3;
+    grid-area: 2 / 3 / 3 / 4;
     justify-self: center;
     width: auto;
     height: auto;
     max-height: 100%;
     max-width: 100%;
   }
-  @media (max-width: 700px) {
+  @media (max-aspect-ratio: 1/1) {
     .ek-container {
       grid-template-columns: 10% 80% 10%;
-      grid-template-rows: 5% 30% auto 10%;
+      grid-template-rows: 5% minmax(20%, auto) 1fr 20%;
     }
     .ek-heading {
-      grid-column: 2 / 3;
-      grid-row: 2 / 3;
-      font-size: 3vmax;
+      grid-area: 2 / 2 / 3 / 3;
       padding: 0 0 20px 0;
       text-align: center;
     }
     .ek-profile-photo {
-      grid-column: 2 / 3;
-      grid-row: 3 / 4;
+      grid-area: 3 / 2 / 4 / 3;
     }    
   }
 </style>
 
 <div class="ek-container">
   <h1 class="ek-heading"><b>Erik Kallevig</b> is a web developer from Minnetonka, MN. He lives in Reston, VA and works at Gannett.</h1>
-  <img src="/images/erik-kallevig-photo.jpg" class="ek-profile-photo">
+  <img class="ek-profile-photo" src="/images/erik-kallevig-photo.jpg">
 </div>
