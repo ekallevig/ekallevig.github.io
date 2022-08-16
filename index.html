@@ -3,64 +3,186 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Erik Kallevig, Web Developer, Reston, VA</title>
-  <meta name="description" content="Erik Kallevig is a web developer.">
-  <meta name="keywords" content="Erik Kallevig, Erik, Kallevig, web, developer">
+  <title>Erik Kallevig, Senior Engineering Manager, Reston, VA</title>
+  <meta name="description" content="Erik Kallevig is a software engineering manager.">
+  <meta name="keywords" content="Erik Kallevig, Erik, Kallevig, web, developer, full-stack engineer, manager">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimal-ui">
   <meta name="google-site-verification" content="M09WRlmjqRJYRrjSWBAfdUAo0hvB69d37vkOKsUs0W4">
   <style>
-    body,html,ul,li {
-        height: 100%;
+    body,html,ul,li,p,h1,h2,h3 {
         margin: 0;
         padding: 0;
     }
+    ul {
+      margin: 20px 0;
+    }
+    li {
+      list-style: none;
+      margin: 0 0 5px;
+    }
     body {
-      font-family: "SF Mono", "Menlo", "Courier New", "Monaco", "Inconsolata", "Fira Mono", "Droid Sans Mono", "Source Code Pro", monospace, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+      font-family: "Franklin Gothic", "San Francisco", Helvetica, Arial, sans-serif;
+      background: #1e1e1e;
+      color: #fff;
     }
-    .ek-container {
-      display: grid;
-      grid-template: 20% 60% 20% / 10% 40% 40% 10%;
-      height: 100%;
-      width: 100%;
+    header {
+      text-align: center;
     }
-    .ek-heading {
-      align-self: center;
-      font-size: 2.2vmax;
+    main {
+      max-width: 600px;
+      margin: 40px auto;
+      padding: 0 40px;
+      overflow: hidden;
+      text-align: center;
+    }
+    section {
+      margin: 0 0 40px;
+    }
+    h1 {
+      font-size: 40px;
       font-weight: normal;
-      grid-column: 2 / 3;
-      grid-row: 2 / 3;
       margin: 0;
-      padding: 0 20px 0 0;
+      padding: 0 0 0 0;
     }
-    .ek-profile-photo {
-      align-self: center;
-      grid-area: 2 / 3 / 3 / 4;
-      justify-self: center;
-      width: auto;
-      height: auto;
-      max-height: 100%;
-      max-width: 100%;
+    h2 {
+      margin: 20px 0 10px;
+      color: #000000;
+      background: #ffe35a;
+      display: inline-block;
+      padding: 0 10px;
     }
-    @media (max-aspect-ratio: 1/1) {
-      .ek-container {
-        grid-template-columns: 10% 80% 10%;
-        grid-template-rows: 5% minmax(20%, auto) 1fr 20%;
+    h3 {
+      color: #64ae49;
+      margin: 25px 0 0;
+      text-align: left;
+      display: inline-block;
+    }
+    p {
+      margin: 10px 0 20px;
+      text-align: left;
+      font-size: 18px;
+      line-height: 22px;
+      /* font-family: Helvetica, Arial, sans-serif; */
+    }
+    a {
+      color: #268bd2;
+    }
+    #ek-sh {
+      background: none;
+      /* color: #268bd2; */
+      color: #bd7cd5;
+      margin: 0;
+    }
+    #ek-sp {
+      text-align: center;
+    }
+    #ek-pp {
+      width: 150px;
+      height: 150px;
+      border-radius: 150px;
+      margin: 0 0 20px;
+    }
+    #ek-rl {
+      margin: 0;
+      padding: 0;
+    }
+    .ek-ri {
+      margin: 0;
+      padding: 0;
+      text-align: left;
+    }
+    .ek-ts {
+      float: right;
+      margin: 25px 0 0;
+      color: grey;
+    }
+    @media (max-width: 800px) {
+      .ek-ts {
+        float: none;
+        margin: 10px 0 5px;
       }
-      .ek-heading {
-        grid-area: 2 / 2 / 3 / 3;
-        padding: 0 0 20px 0;
-        text-align: center;
-      }
-      .ek-profile-photo {
-        grid-area: 3 / 2 / 4 / 3;
-      }    
     }
   </style>
 </head>
 
 <body>
-  <div class="ek-container">
-    <h1 class="ek-heading"><b>Erik Kallevig</b> is a web developer in Reston, VA.</h1>
-    <img class="ek-profile-photo" src="/images/erik-kallevig-photo.jpg" alt="Erik Kallevig">
-  </div>
+  <main>
+    <article>
+      <header>
+        <img id="ek-pp" src="/images/erik-kallevig-photo.jpg" srcset="/images/erik-kallevig-photo@2x.jpg" alt="Erik Kallevig">
+        <hgroup>
+          <h1>Erik Kallevig</h1>
+          <h2 id="ek-sh">Engineer &middot; Leader &middot; Technologist</h2>
+        </hgroup>
+      </header>
+      <section id="ek-ss">
+        <p id="ek-sp">I've been creating software in various roles for 20 years, from startups to tech giants. I love using technology to solve problems and improve people's lives.</p>
+      </section>
+      <section>
+        <h2>Roles I've Had</h2>
+        
+        <ol id="ek-rl">
+          <li class="ek-ri">            
+            <h3>Senior Engineering Manager, <a href="https://www.gannett.com" target="_blank">Gannett</a></h3>
+            <p class="ek-ts">Oct 2012 - Aug 2022</p>
+            <p>Managed the engineering team for usatoday.com and 100+ local news sites. Responsibilities have ranged from technical architecture, code review, managing engineers, data collection / analytics, AB testing, technical product mgmt, and lots of front- and back-end code. Tech included: node, python, django, js, css, html, vcl (fastly), graphql, angular, backbone, react, next.js, typescript, go, solr, elasticsearch, bash, docker, gcp, aws, jenkins, github actions, kubernetes, postgresql, terraform.</p>
+          </li>
+          <li class="ek-ri">
+            <h3>Senior Developer, <a href="https://fantasy.co/" target="_blank">Fantasy Interactive</a></h3>
+            <p class="ek-ts">Mar 2010 - Oct 2012</p>
+            <p>Web development (HTML, CSS, JS, Java, PHP) and product management on various client projects including Google's Think Quarterly, Think Insights with Google, A Google a Day, Google 20 Things I Learned About Browsers and the Web, Google Zeitgeist, HTC, Coca-Cola, TravelTex. Worked directly with clients, designers and IA team as developer and product/project manager.</p>
+          </li>
+          <li class="ek-ri">
+            <h3>Senior Front-End Developer, <a href="http://www.sportsvite.com" target="_blank">Sportsvite</a></h3>
+            <p class="ek-ts">Jul 2008 - Mar 2010</p>
+            <p>Front-end web development (HTML, CSS, JavaScript, Photoshop) on core and partner Sportsvite properties: sportsvite.com, truthonhealth.org (Paul Pierce), cbsintramurals.com and playcoed.com. Projects included site design and development, scripting (eg. dynamic partner widgets), usability testing, HTML email design / dev / testing and project management. Worked with back-end developers and directly with clients as both designer / developer and project manager.</p>
+          </li>
+          <li class="ek-ri">
+            <h3>User Interface Designer-Developer, <a href="https://www.keybank.com" target="_blank">KeyBank</a></h3>
+            <p class="ek-ts">Mar 2006 - Jun 2008</p>
+            <p>Front-end development (HTML, CSS, JavaScript and Photoshop) on KeyBank’s public website (key.com) as well as their online banking application. Projects included online banking redesign, key.com redesign, promo page design, section redesigns, marketing graphics production, scripting projects (prototype.js, scriptaculous, etc), usability testing, content management and wiki setup/design. Worked with back-end developers and lines of business.</p>
+          </li>
+          <li class="ek-ri">
+            <h3>Front-End Developer, <a href="https://www.ehmedia.com/" target="_blank">EH Publishing</a></h3>
+            <p class="ek-ts">Jan 2005 - Feb 2006</p>
+            <p>Front-end development (HTML, CSS, JavaScript and Photoshop) and content management on EH’s nine websites supporting the flagship publication, Electronic House, as well as other electronics publications and yearly expos. Site design and promotional graphics on electronichouse.com, design and implementation of new magazine website (worshipfacilities.com), CMS development (simpleTAL), subscription form redesigns (circulation), information architecture and promotional email design/coding/testing.</p>
+          </li>
+          <li class="ek-ri">
+            <h3>Web Developer, <a href="https://www.stromengineering.com/" target="_blank">Strom Engineering</a></h3>
+            <p class="ek-ts">2003 - 2005</p>
+            <p>Designed and developed stromengineering.com. CMS integration, job board, contact forms, copywriting, photography, and client dashboard.</p>
+          </li>
+        </ol>
+      </section>
+      <!-- <section>
+        <h2>Ideas I Like</h2>
+        <ul>
+        </ul>
+      </section> -->
+      <section>
+        <h2>A Few Things I've Done</h2>
+        <ul>
+          <li>Managed engineering teams</li>
+          <li>Built CI/CD pipelines with Github Actions</li>
+          <li>Created Google Cloud resources with Terraform</li>
+          <li>Automated Postgresql to Elasticsearch reindexing</li>
+          <li>Built an A/B testing framework</li>
+          <li>Configured edge caching with Fastly VCL</li>
+          <li>Wrote Helm charts for Kubernetes deployments</li>
+          <li>Built a bicycle wheel</li>
+          <li>Designed a Javascript framework</li>
+          <li>Ingested data from a Pub/Sub subscription</li>
+          <li>Plotted locations with Mercator algorithm and CSS</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Contact</h2>
+        <ul>
+          <li><a href="mailto:ekallevig@gmail.com">ekallevig@gmail.com</a></li>
+          <li><a href="tel:+19173199095">+1 917-319-9095</a></li>
+          <li><a href="https://www.linkedin.com/in/ekallevig/" target="_blank">LinkedIn</a></li>
+        </ul>
+      </section>
+    </article>
+  </main>
 </body>
