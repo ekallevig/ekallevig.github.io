@@ -39,8 +39,6 @@
     }
     h1 {
       font-size: 40px;
-      margin: 0;
-      padding: 0 0 0 0;
     }
     h2 {
       margin: 40px 0 10px;
@@ -54,28 +52,19 @@
     h3 a {
       font-weight: 400;
       margin: 0 0 0 5px;
-      text-decoration: none;
     }
-    ul {
-      margin: 20px 0 20px 0;
-    }
-    .ek-pl {
-      margin-left: 0;
+    ul, ol {
+      margin: 20px 0;
     }
     li {
       list-style: none;
       margin: 0 0 20px;
-    }
-    ol li,
-    .ek-pli {
-      list-style: none;
     }
     .ek-pli {
       margin: 0 0 10px;
     }
     p {
       margin: 10px 0 20px;
-      text-align: left;
     }
     li, p {
       font-size: 18px;
@@ -86,7 +75,6 @@
       text-decoration: none;
     }
     #ek-sh {
-      background: none;
       /* color: #268bd2; */
       color: #bd7cd5;
       margin: 10px 0 15px;
@@ -110,6 +98,25 @@
       margin: 25px 0 0;
       color: grey;
     }
+    .ek-ulcol {
+      -moz-column-count: 2;
+      -moz-column-gap: 20px;
+      -webkit-column-count: 2;
+      -webkit-column-gap: 20px;
+      column-count: 2;
+      column-gap: 20px;
+    }
+    .ek-ulcolsm {
+      -moz-column-count: 4;
+      -moz-column-gap: 20px;
+      -webkit-column-count: 4;
+      -webkit-column-gap: 20px;
+      column-count: 4;
+      column-gap: 20px;
+    }
+    .ek-ulcolsm li {
+      margin: 0 0 5px;
+    }
     @media (max-width: 700px) {
       main {
         margin: 30px auto;
@@ -120,9 +127,6 @@
       }
       section {
         margin: 0 0 30px;
-      }
-      ul {
-        list-style: disc;
       }
       li {
         margin: 0 0 20px;
@@ -139,7 +143,6 @@
       }
       h3 {
         display: block;
-        /* margin: 30px 0 0; */
       }
       h3 a {
         margin: 0;
@@ -154,10 +157,55 @@
         float: none;
         margin: 5px 0 0;
       }
-      /* #ek-pp {
-        width: 120px;
-        height: 120px;
-      } */
+    }
+    @media (max-width: 500px) {
+      .ek-ulcolsm {
+        -moz-column-count: 3;
+        -webkit-column-count: 3;
+        column-count: 3;
+      }
+    }
+    @media (max-width: 400px) {
+      .ek-ulcolsm {
+        -moz-column-count: 2;
+        -webkit-column-count: 2;
+        column-count: 2;
+      }
+    }
+    @media (max-width: 300px) {
+      .ek-ulcol {
+        -moz-column-count: 1;
+        -webkit-column-count: 1;
+        column-count: 1;
+      }
+      .ek-ulcolsm {
+        -moz-column-count: 1;
+        -webkit-column-count: 1;
+        column-count: 1;
+      }
+    }
+    @media print {
+      #ek-pp {
+        display: none;
+      }
+      h1, h2, h3, li, p, a {
+        color: #000 !important;
+      }
+      main {
+        margin: 0;
+        max-width: none;
+      }
+      .ek-ri {
+        margin: 0 0 20px;
+      }
+      p, li, .ek-pli, .ek-ts {
+        font-size: 14px;
+        line-height: 20px;
+        margin: 10px 0 10px;
+      }
+      h3 {
+        margin: 10px 0 0;
+      }
     }
   </style>
 </head>
@@ -171,36 +219,52 @@
           <h1>Erik Kallevig</h1>
           <h2 id="ek-sh">Engineer &middot; Leader &middot; Technologist</h2>
         </hgroup>
-        <p>I've been creating software in various roles for 20 years, from startups to tech giants. I love using technology to solve problems and improve people's lives. My goal is to foster a rewarding team environment that produces intuitive, useful experiences.</p>
+        <p>I've been making websites for 20 years in finance, tech, media, consulting and startups. As a team leader and engineer, my goal is to develop a fun and rewarding team environment that delivers simple, fast and useful products.</p>
       </header>
+      <section>
+        <h2>Expertise</h2>
+        <ul class="ek-ulcol">
+          <li>Leadership &amp; Development</li>
+          <li>Technical Analysis</li>
+          <li>Platform Architecture</li>
+          <li>Program Management</li>
+          <li>Code Assessment</li>
+          <li>Operations Strategy</li>
+        </ul>
+      </section>
       <section>
         <h2>Experience</h2>
         <ol class="ek-rl">
           <li class="ek-ri">
             <h3>Senior Engineering Manager <a href="https://www.gannett.com" target="_blank">Gannett</a></h3>
             <p class="ek-ts">Oct 2012 - Aug 2022</p>
-            <p>Managed engineering teams for usatoday.com and 100+ local news sites. Responsibilities ranged from technical architecture, mentorship, career development, data collection / analytics, code review, AB testing, product management, and lots of front- and back-end code. Worked with teams big and small and collaborated with all areas of the business: newsroom, marketing, advertising, product, and analytics.</p>
-            <p>Tech included: node, python, django, js, css, html, vcl (fastly), graphql, angular, backbone, react, next.js, mui, typescript, go, solr, elasticsearch, bash, docker, gcp, aws, jenkins, github actions, kubernetes, helm, postgresql, terraform.</p>
+            <ul>
+              <li>Led team of 10 engineers on redesign of usatoday.com and 100+ local news sites serving 100M+ monthly impressions.</li>
+              <li>Built an A/B testing suite and conducted live tests to optimize engagment and conversion goals.</li>
+              <li>Designed a CI/CD pipeline with Github Actions &amp; Kubernetes for full-stack public notices application.</li>
+              <li>Implemented personalized content recommendations using behavior-generated user profiles.</li>
+              <li>Product development coordination with stakeholders across the business: newsroom, marketing, advertising, product, and analytics.</li>
+            </ul>
           </li>
           <li class="ek-ri">
             <h3>Senior Developer <a href="https://fantasy.co/" target="_blank">Fantasy Interactive</a></h3>
             <p class="ek-ts">Mar 2010 - Oct 2012</p>
-            <p>Web development (HTML, CSS, JS, Java, PHP) and product management on various client projects including Google's Think Quarterly, Think Insights with Google, A Google a Day, Google 20 Things I Learned About Browsers and the Web, Google Zeitgeist, HTC, Coca-Cola, TravelTex. Worked directly with clients, designers and IA team as developer and product/project manager.</p>
+            <p>Web development and product management on client projects including Google's Think Quarterly, Think Insights with Google, A Google a Day, Google 20 Things I Learned About Browsers and the Web, Google Zeitgeist, HTC, Coca-Cola, TravelTex. Worked directly with clients, designers and IA team as developer, product manager and project manager.</p>
           </li>
           <li class="ek-ri">
             <h3>Senior Front-End Developer <a href="http://www.sportsvite.com" target="_blank">Sportsvite</a></h3>
             <p class="ek-ts">Jul 2008 - Mar 2010</p>
-            <p>Front-end web development (HTML, CSS, JavaScript, Photoshop) on core and partner Sportsvite properties: sportsvite.com, truthonhealth.org (Paul Pierce), cbsintramurals.com and playcoed.com. Projects included site design and development, scripting (eg. dynamic partner widgets), usability testing, HTML email design / dev / testing and project management. Worked with back-end developers and directly with clients as both designer / developer and project manager.</p>
+            <p>Front-end web development on core and partner Sportsvite properties: sportsvite.com, truthonhealth.org (Paul Pierce), cbsintramurals.com and playcoed.com. Projects included site design and development, scripting dynamic partner components, usability testing, HTML email design / dev / testing and project management. Worked with back-end developers and directly with clients as designer, developer and project manager.</p>
           </li>
           <li class="ek-ri">
             <h3>UI Designer-Developer <a href="https://www.keybank.com" target="_blank">KeyBank</a></h3>
             <p class="ek-ts">Mar 2006 - Jun 2008</p>
-            <p>Front-end development (HTML, CSS, JavaScript and Photoshop) on KeyBank’s public website (key.com) as well as their online banking application. Projects included online banking redesign, key.com redesign, promo page design, section redesigns, marketing graphics production, scripting projects (prototype.js, scriptaculous, etc), usability testing, content management and wiki setup/design. Worked with back-end developers and lines of business.</p>
+            <p>Front-end development on KeyBank's public website (key.com) and online banking application. Projects included online banking redesign, key.com redesign, promotional design, section redesigns, marketing graphics production, scripting projects, usability testing, content management and documentation solutions. Worked with back-end developers and lines of business.</p>
           </li>
           <li class="ek-ri">
             <h3>Front-End Developer <a href="https://www.ehmedia.com/" target="_blank">EH Publishing</a></h3>
             <p class="ek-ts">Jan 2005 - Feb 2006</p>
-            <p>Front-end development (HTML, CSS, JavaScript and Photoshop) and content management on EH’s nine websites supporting the flagship publication, Electronic House, as well as other electronics publications and yearly expos. Site design and promotional graphics on electronichouse.com, design and implementation of new magazine website (worshipfacilities.com), CMS development (simpleTAL), subscription form redesigns (circulation), information architecture and promotional email design/coding/testing.</p>
+            <p>Front-end development and content management on EH's nine websites supporting the flagship publication, Electronic House, and other electronics publications and yearly expos. Site design and promotional graphics on electronichouse.com, design and implementation of new magazine website (worshipfacilities.com), CMS development (simpleTAL), subscription form redesigns (circulation), information architecture and promotional email design/coding/testing.</p>
           </li>
           <li class="ek-ri">
             <h3>Web Developer <a href="https://www.stromengineering.com/" target="_blank">Strom Engineering</a></h3>
@@ -212,35 +276,89 @@
       <section>
         <h2>A Few Things I've Done</h2>
         <ul>
-          <li>Managed teams of engineers</li>
-          <li>Built CI/CD pipelines with Github Actions</li>
-          <li>Created Google Cloud resources with Terraform</li>
-          <li>Presented at conferences</li>
-          <li>Automated Postgresql to Elasticsearch indexing</li>
-          <li>Built an A/B testing framework</li>
+          <li>Automated Postgresql to Elasticsearch re-indexing</li>
           <li>Conducted user testing sessions</li>
           <li>Configured edge caching with Fastly VCL</li>
           <li>Wrote Helm charts for Kubernetes deployments</li>
-          <li>Built a bicycle wheel</li>
-          <li>Designed a Javascript framework</li>
+          <li>Designed a Javascript component framework</li>
           <li>Ingested data from a Pub/Sub subscription</li>
           <li>Plotted locations with Mercator algorithm and CSS</li>
+          <li>Built CI/CD pipelines with Github Actions</li>
+          <li>Created Google Cloud resources with Terraform</li>
+          <li>Built an A/B testing framework</li>
+          <li>Developed personalized content recommendations</li>
         </ul>
       </section>
       <section>
         <h2>Some Good Ideas</h2>
         <ul>
-          <li>Strive for simplicity. If it's complicated to build, it's likely hard to use and maintain.</li>
+          <li>Keep it simple. If it's complicated to build, it's complicated to use and maintain.</li>
           <li>Help each other improve. We learn faster together than apart.</li>
-          <li>Don't reinvent the wheel. Use the tools we already have when it makes sense.</li>
-          <li>Prioritize performance. You may not need all that JavaScript and CSS ;)</li>
-          <li>Think big picture. Is what you're doing really going to make an impact? If not, change course!</li>
-          <li>Use your products. If you don't like how something works, speak up.</li>
+          <li>Don't reinvent the wheel. Use existing tools when it makes sense.</li>
+          <li>Prioritize performance and efficiency. Less code is better.</li>
+          <li>Think big picture. Will your work make a real impact? If not, change course.</li>
+          <li>Use your products. If you don't like something, speak up.</li>
         </ul>
       </section>
       <section>
         <h2>Tools I've Used</h2>
-        <p>go, node, python, php, javascript, react, redux, angular, vue, java, kubernetes, css, html, vcl (fastly), graphql, next.js, express, mui, typescript, backbone, solr, elasticsearch, bash, docker, google cloud (gcp), aws, jenkins, github actions, helm, mysql, postgresql, wordpress, hasura, web sockets, jest, cypress, photoshop, agile, kanban, scrum, tdd, bdd, fdd, adaptive delivery, ci/cd, git, varnish, fastly, terraform</p>
+        <ul class="ek-ulcolsm">
+          <li>agile</li>
+          <li>angular</li>
+          <li>aws</li>
+          <li>babel</li>
+          <li>backbone</li>
+          <li>bash</li>
+          <li>bdd</li>
+          <li>ci/cd</li>
+          <li>css</li>
+          <li>cypress</li>
+          <li>docker</li>
+          <li>elasticsearch</li>
+          <li>express</li>
+          <li>fastly</li>
+          <li>fdd</li>
+          <li>git</li>
+          <li>github actions</li>
+          <li>go</li>
+          <li>gcp</li>
+          <li>graphql</li>
+          <li>grunt</li>
+          <li>hasura</li>
+          <li>helm</li>
+          <li>html</li>
+          <li>java</li>
+          <li>javascript</li>
+          <li>jenkins</li>
+          <li>jest</li>
+          <li>kanban</li>
+          <li>kubernetes</li>
+          <li>less</li>
+          <li>mui</li>
+          <li>mysql</li>
+          <li>next.js</li>
+          <li>node</li>
+          <li>photoshop</li>
+          <li>php</li>
+          <li>postgresql</li>
+          <li>python</li>
+          <li>react</li>
+          <li>redux</li>
+          <li>sass</li>
+          <li>scrum</li>
+          <li>solr</li>
+          <li>tdd</li>
+          <li>terraform</li>
+          <li>typescript</li>
+          <li>uglify</li>
+          <li>varnish</li>
+          <li>vault</li>
+          <li>vcl (fastly)</li>
+          <li>vue</li>
+          <li>webpack</li>
+          <li>web sockets</li>
+          <li>wordpress</li>
+        </ul>
       </section>
       <section>
         <h2>Education</h2>
